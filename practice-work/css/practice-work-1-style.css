@@ -26,17 +26,17 @@ th, td {
 
 /* Встановлення кольору для заголовків таблиці */
 th {
-    background-color: #8fa9ff;
+    background-color: #98b2df;
 }
 
 .week { /* Розділення на тижні в розкладі */
     font-weight: bold;
-    background-color: #7e9bf8;
+    background-color: #8ca6fd;
 }
 
 .lesson { /* Колонка з датою та днем в розкладі */
     font-weight: bold;
-    background-color: #bfcfff;
+    background-color: #bdcdff;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ th {
 tr.lecture td:not(.lesson) { /* Лекція */
     background-color: #cce5ff;
 }
-tr.practice td:not(.lesson) { /* Пракчтина робота */
+tr.practice td:not(.lesson) { /* Практична робота */
     background-color: #fff3cd;
 }
 tr.lab td:not(.lesson) { /* Лабораторна робота */
