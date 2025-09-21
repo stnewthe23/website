@@ -1,0 +1,56 @@
+/* Встановлення шрифту та створення зовнішнього відступу в 20 пікселів */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Текст заголовка по центру */
+h2 {
+    text-align: center;
+}
+
+/* Таблиця без подвійних меж і яка займає всю ширину контейнера */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Створення рамки та відступів. Вирівнювання тексту та вертикальне вирівнювання для всіх клітинок таблиці */
+th, td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Встановлення кольору для заголовків таблиці */
+th {
+    background-color: #8fa9ff;
+}
+
+.week { /* Розділення на тижні в розкладі */
+    font-weight: bold;
+    background-color: #7e9bf8;
+}
+
+.lesson { /* Колонка з датою та днем в розкладі */
+    font-weight: bold;
+    background-color: #bfcfff;
+    text-align: center;
+}
+
+/* Виділення занять по всій парі через клас на tr */
+
+tr.lecture td:not(.lesson) { /* Лекція */
+    background-color: #cce5ff;
+}
+tr.practice td:not(.lesson) { /* Пракчтина робота */
+    background-color: #fff3cd;
+}
+tr.lab td:not(.lesson) { /* Лабораторна робота */
+    background-color: #ffcc80;
+}
+tr.no-lessons td:not(.lesson) { /* Немає занять */
+    background-color: #ececec;
+}
