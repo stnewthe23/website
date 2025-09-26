@@ -1,4 +1,4 @@
-body {
+body { /* Вставнолення шрифту сторінки, відцентровування тексту, та встановлення фонового градієнту  */
     font-family: Arial, sans-serif;
     margin: 20px;
     text-align: center;
@@ -6,25 +6,25 @@ body {
     background: radial-gradient(circle,rgba(255, 255, 255, 1) 43%, rgba(217, 230, 255, 1) 100%);
 }
 
-h1 {
+h1 { /* Текст заголовок */
     margin-top: 3%;
     text-align: center;
 }
 
-form {
+form { /* оформлення форми та встановлення тіні */
     max-width: 400px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ffffff;
-    box-shadow: 0px 0px 32px 4px #a89fff; 
+    box-shadow: 0px 0px 20px 1px #a89fff; 
 }
 
-label {
+label { /* Налаштування заголовків в формі */
     display: block;
     margin-top: 10px;
 }
 
-input, select {
+input, select { /* Оформлення відповідей в формі */
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -33,7 +33,7 @@ input, select {
     border: 1px solid;
 }
 
-input[type="submit"] {
+input[type="submit"] { /* Оформлення кнопки відправки заповненої форми */
     margin-top: 15px;
     background-color: #000000;
     color: white;
@@ -42,11 +42,11 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover { /* Тінь при натиску кнопки відправки форми */
     background-color: #969696;
 }
 
-a {
+a { /* Оформлення посилання на головну сторінку */
     margin-top: 4%;
     display: block;
     margin-bottom: 20px;
