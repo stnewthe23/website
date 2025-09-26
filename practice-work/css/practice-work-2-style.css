@@ -16,7 +16,7 @@ form { /* оформлення форми та встановлення тіні
     margin: auto;
     padding: 20px;
     border: 1px solid #ffffff;
-    box-shadow: 0px 0px 20px 1px #a89fff; 
+    box-shadow: 0px 0px 17px -2px #a89fff; 
 }
 
 label { /* Налаштування заголовків в формі */
