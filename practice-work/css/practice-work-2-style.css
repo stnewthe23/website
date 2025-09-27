@@ -3,7 +3,7 @@ body { /* Вставнолення шрифту сторінки, відцент
     margin: 20px;
     text-align: center;
     background: #ffffff;
-    background: radial-gradient(circle,rgba(255, 255, 255, 1) 43%, rgba(217, 230, 255, 1) 100%);
+    background: radial-gradient(circle,#ffffff 43%, #d9e6ff 100%);
 }
 
 h1 { /* Текст заголовок */
@@ -12,11 +12,10 @@ h1 { /* Текст заголовок */
 }
 
 form { /* оформлення форми та встановлення тіні */
-    max-width: 400px;
+    max-width: 425px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ffffff;
-    box-shadow: 0px 0px 17px -2px #a89fff; 
+    border: 1px solid #000000;
 }
 
 label { /* Налаштування заголовків в формі */
