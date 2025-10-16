@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота 3</title>
+
+  <!-- Встановлення іконок Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Встановлення іконки сторінки -->
+  <link rel="icon" type="image/x-icon" href="practice-work-3-images/favicon.png">
+
+  <!-- Стилі сторінки -->
+  <link rel="stylesheet" href="css/practice-work-3-style.css">
+
+  <!-- Створення нової вкладки при кліку на посилання -->
+  <base target="_blank">
+
+</head>
+<body>
+
+<!-- Налаштування меню на сторінці -->
+<div class="menu">
+<!-- Логотип зліва зверху -->
+<div class="menu-left-logo">
+    <img src="practice-work-3-images/logo.png">
+</div>
+	 <!-- Налаштування пошуку зверху -->
+    <div class="search">
+        <input type="text" placeholder="Пошук">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+    
+	<!-- Іконки звіночка та користувача справа зверху -->
+    <div class="menu-right">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user-circle"></i>
+    </div>
+</div>
+
+<!-- Категорії під пошуком -->
+<div class="categories">
+	<button class="active">Усі</button>
+	<button>Подкасти</button>
+	<button>Ігри</button>
+	<button>Наживо</button>
+	<button>Історія</button>
+	<button>Комп’ютерне обладнання</button>
+	<button>Комедія</button>
+	<button>Кулінарія</button>
+	<button>Музика</button>
+	<button>Проглянуті</button>
+	<button>Нещодавно завантажено</button>
+</div>
+
+<!-- Налаштування лівого меню -->
+<div class="menu-left">
+<!-- Список посилань лівого меню -->
+<div class="menu-left-list">
+    <div class="menu-left-link"><i class="fas fa-home"></i> Головна</div>
+    <div class="menu-left-link"><i class="fas fa-bolt"></i> Shorts</div>
+    <div class="menu-left-link"><i class="fas fa-tv"></i> Підписки</div>
+</div>
+
+<!-- Лінія поділу -->
+<div class="line"></div>
+
+<!-- Назва розділу зліва -->
+<div class="menu-left-name">Ви</div>
+
+<!-- Список розділу Ви -->
+<div class="menu-left-list">
+    <div class="menu-left-link"><i class="fas fa-clock-rotate-left"></i> Історія</div>
+    <div class="menu-left-link"><i class="fas fa-list"></i> Плейлисти</div>
+    <div class="menu-left-link"><i class="fas fa-video"></i> Ваші відео</div>
+    <div class="menu-left-link"><i class="fas fa-stopwatch"></i> Переглянути пізніше</div>
+    <div class="menu-left-link"><i class="fas fa-thumbs-up"></i> Відео, які сподобалися</div>
+</div>
+
+<!-- Лінія поділу -->
+<div class="line"></div>
+
+<!-- Назва розділу підписки зліва -->
+<div class="menu-left-name">
+    Підписки <i class="fas fa-chevron-right" style="margin-left:auto; font-size:12px;"></i>
+</div>
+
+<!-- Список підписок -->
+<div class="menu-left-list subscriptions">
+    <div class="menu-left-link">
+        <img class="sub-icon" src="practice-work-3-images/video-5-channel.jpg">
+        <span>thethremba</span>
+    </div>
+    <div class="menu-left-link">
+        <img class="sub-icon" src="https://yt3.googleusercontent.com/ytc/AIdro_kXK0r3_p-Ht_8QNz7t2diayNQ78E7mRy6F-pu9iTO6zTk=s160-c-k-c0x00ffffff-no-rj">
+        <span>NYT Cooking</span>
+    </div>
+    <div class="menu-left-link">
+        <img class="sub-icon" src="https://yt3.googleusercontent.com/pjDcIrc21oYPCkKpfY1zElDRHhw907VyW4zpuhJP5YCCvZPpyt0de08XM-uECMPQFAsidNK0bw=s160-c-k-c0x00ffffff-no-rj">
+        <span>Business Insider</span>
+    </div>
+    <div class="menu-left-link">
+        <img class="sub-icon" src="https://yt3.googleusercontent.com/4rqU2idWGhqOZ4ysAn8Docm3plRdngqRte7Scpexz4o5iojQV6xaJBkyAN4GfvxhRg8dcW9wGg=s160-c-k-c0x00ffffff-no-rj">
+        <span>Makarlelo</span>
+    </div>
+    <div class="menu-left-link">
+        <img class="sub-icon" src="https://yt3.ggpht.com/mQf96gDrciXZZJHXN1tuSlRlm56U0ZI55vcdp7laYLSxZRNUIgeGX5byXjaVaRIevUPVB8Yofg=s88-c-k-c0x00ffffff-no-rj">
+        <span>Michael MJD</span>
+    </div>
+	<div class="menu-left-link">
+        <img class="sub-icon" src="https://yt3.ggpht.com/ytc/AIdro_kMtq3K1evqTjYwHo795ruM5UdrZ3F8uRP-ro0joMoxswM=s88-c-k-c0x00ffffff-no-rj">
+        <span>LMG Clips</span>
+    </div>
+</div>
+
+</div>
+
+<!-- Налаштування оформлення сторінки -->
+<div class="web">
+	<!-- Налаштування списку відео на сторінці -->
+    <div class="list">
+
+<!-- Відео 1 - ВИЖИВАННЯ НА КОЛЕСАХ! Перший погляд на Long Drive North -->
+<div class="video"> 
+    <!-- Зображення відео -->
+	<div class="image"> 
+		    <a href="https://www.youtube.com/watch?v=jI_zXmKr_To">
+		    <img src="practice-work-3-images/video-1-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">1:01:28</div>
+		</a>
+ 	</div> 
+	<div class="info">
+	<!-- Іконка каналу з посиланням на канал -->
+	<div class="name"> 
+		<a href="https://www.youtube.com/@olmax_ua">
+		    <img class="channel-icon" src="practice-work-3-images/video-1-channel.jpg">
+		</a> 
+	<div class="details">
+		<!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=jI_zXmKr_To">🚐 ВИЖИВАННЯ НА КОЛЕСАХ! Перший погляд на Long Drive North 😱</a> 
+	    <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->
+		<div class="channel-info"> 
+                <a href="https://www.youtube.com/@olmax_ua">OLMAX</a> 
+		        <span>1,6 тис. переглядів • 9 годин тому</span> 
+		</div> 
+	</div>
+	<!-- Іконка три точки справа під відео -->
+    <i class="fas fa-ellipsis-v"></i> 
+	</div> 
+	</div>
+</div>
+
+<!-- Відео 2 - Linus Tries VR From 1994 -->
+<div class="video"> 
+    <!-- Зображення відео -->
+	<div class="image"> 
+		<a href="https://www.youtube.com/watch?v=d-L63_cGyxY">
+		    <img src="practice-work-3-images/video-2-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">15:42</div>
+		</a>
+ 	</div> 
+	<div class="info">
+	<!-- Іконка каналу з посиланням на канал -->
+	<div class="name"> 
+		<a href="https://www.youtube.com/@LinusTechTips">
+		    <img class="channel-icon" src="practice-work-3-images/video-2-channel.jpg">
+		</a> 
+	<div class="details">
+		<!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=d-L63_cGyxY">Linus Tries VR From 1994</a> 
+	    <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->
+		<div class="channel-info"> 
+            <a href="https://www.youtube.com/@LinusTechTips">Linus Tech Tips <i class="fas fa-check-circle verified-channel"></i></a>
+		    <span>775 тис. переглядів • 8 днів тому</span> 
+		</div> 
+	</div> 
+	<!-- Іконка три точки справа під відео -->
+	<i class="fas fa-ellipsis-v"></i> 
+	</div> 
+	</div>
+</div>
+
+<!-- Відео 3 - Why store-bought baked goods taste so different -->
+<div class="video">
+    <!-- Зображення відео -->
+	<div class="image"> 
+		<a href="https://www.youtube.com/watch?v=wE1wUrd5QoQ">
+		    <img src="practice-work-3-images/video-3-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">8:48</div>
+		</a>
+ 	</div> 
+	<div class="info"> 
+	<!-- Іконка каналу з посиланням на канал -->
+	<div class="name"> 
+		<a href="https://www.youtube.com/@aragusea">
+		    <img class="channel-icon" src="practice-work-3-images/video-3-channel.jpg">
+		</a> 
+	<div class="details">
+		<!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=wE1wUrd5QoQ">Why store-bought baked goods taste so different</a> 
+	    <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->
+		<div class="channel-info"> 
+            <a href="https://www.youtube.com/@aragusea">Adam Ragusea <i class="fas fa-check-circle verified-channel"></i></a> 
+		    <span>302 тис. переглядів • 13 днів тому</span> 
+		</div> 
+	</div> 
+	<!-- Іконка три точки справа під відео -->
+    <i class="fas fa-ellipsis-v"></i> 
+    </div> 
+	</div>
+</div>
+
+<!-- Відео 4 - Fantasy Medieval Music for Focus & Calm | The Dwarf’s Long Mountain Journey -->
+<div class="video">
+    <!-- Зображення відео --> 
+	<div class="image"> 
+		<a href="https://www.youtube.com/watch?v=4WIMyqBG9gs">
+		    <img src="practice-work-3-images/video-4-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">2:01:33</div>
+		</a>
+ 	</div> 
+	<div class="info"> 
+    <!-- Іконка каналу з посиланням на канал -->
+	<div class="name"> 
+		<a href="https://www.youtube.com/@SpringsofSerenity">
+		    <img class="channel-icon" src="practice-work-3-images/video-4-channel.jpg">
+		</a> 
+	<div class="details"> 
+		<!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=4WIMyqBG9gs">Fantasy Medieval Music for Focus & Calm | The Dwarf’s Long Mountain Journey</a> 
+	    <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->    
+		<div class="channel-info"> 
+                <a href="https://www.youtube.com/@SpringsofSerenity">Springs of Serenity</a> 
+		        <span>442 тис. переглядів • 2 тижні тому</span> 
+		</div> 
+	</div> 
+	<!-- Іконка три точки справа під відео -->
+    <i class="fas fa-ellipsis-v"></i> 
+	</div> 
+	</div>
+</div>
+
+<!-- Відео 5 - Гра, яка РОЗІРВАЛА ІНТЕРНЕТ | PEAK Проходження Українською -->
+<div class="video">
+    <!-- Зображення відео -->
+	<div class="image"> 
+		<a href="https://www.youtube.com/watch?v=Ps-ktkPfMXU">
+		    <img src="practice-work-3-images/video-5-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">2:23:18</div>
+		</a>
+ 	</div> 
+	<div class="info"> 
+    <!-- Іконка каналу з посиланням на канал -->    
+	<div class="name"> 
+		<a href="https://www.youtube.com/@thethremba">
+		    <img class="channel-icon" src="practice-work-3-images/video-5-channel.jpg">
+		</a> 
+	<div class="details">
+		<!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=Ps-ktkPfMXU">Гра, яка РОЗІРВАЛА ІНТЕРНЕТ | PEAK Проходження Українською</a> 
+	    <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->
+		<div class="channel-info"> 
+            <a href="https://www.youtube.com/@thethremba">thethremba <i class="fas fa-check-circle verified-channel"></i></a> 
+		    <span>77 тис. переглядів • 3 місяці тому</span> 
+		</div> 
+	</div> 
+	<!-- Іконка три точки справа під відео -->
+    <i class="fas fa-ellipsis-v"></i> 
+	</div> 
+	</div>
+</div>
+
+<!-- Відео 6 - Я ЗІБРАВ САТСУМУ в My Summer Car -->
+<div class="video"> 
+    <!-- Зображення відео -->
+	<div class="image"> 
+		<a href="https://www.youtube.com/watch?v=F_BzvchO0aU">
+		    <img src="practice-work-3-images/video-6-image.jpg">
+        <!-- Тривалість відео -->
+		<div class="time">23:04</div>
+		</a>
+ 	</div> 
+	<div class="info">
+    <!-- Іконка каналу з посиланням на канал -->     
+	<div class="name"> 
+		<a href="https://www.youtube.com/@Derooxxx">
+		    <img class="channel-icon" src="practice-work-3-images/video-6-channel.jpg">
+		</a> 
+	<div class="details"> 
+        <!-- Назва відео та посилання на відео -->
+		<a class="name-link" href="https://www.youtube.com/watch?v=F_BzvchO0aU">Я ЗІБРАВ САТСУМУ в My Summer Car</a> 
+        <!-- Посилання на канал, а також інформація про перегляди та дату завантаження відео -->
+	    <div class="channel-info"> 
+            <a href="https://www.youtube.com/@Derooxxx">Derox</a> 
+		    <span>73 тис. переглядів • 3 місяці тому</span> 
+		</div> 
+	</div> 
+	<!-- Іконка три точки справа під відео -->
+    <i class="fas fa-ellipsis-v"></i> 
+	</div> 
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

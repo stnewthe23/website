@@ -1,0 +1,401 @@
+/* Загальні налаштування сторінки */
+body {
+    margin: 0; /* Прибирає відступи за замовчуванням */
+    font-family: "Arial", sans-serif; /* Основний шрифт сторінки */
+    background-color: #0f0f0d; /* Темний фон сторінки */
+    color: #ffffff; /* Білий колір тексту */
+    display: flex; /* Встановлення гнучкого контейнера */
+    flex-direction: column; /* Розташування елементів у стовпець */
+    height: 100vh; /* Висота сторінки на весь екран */
+}
+
+/* Верхнє меню */
+.menu {
+    display: flex; /* Вирівнює елементи в один ряд */
+    align-items: center; /* Центрує елементи вертикально */
+    justify-content: space-between; /* Розподіляє простір між елементами */
+    padding: 8px 16px; /* Внутрішні відступи */
+    position: sticky; /* Фіксує меню зверху при прокрутці */
+    top: 0;
+    z-index: 100; /* Забезпечує, щоб меню було поверх іншого контенту */
+    background-color: #0f0f0d; /* Темний фон меню */
+}
+
+/* Логотип зліва зверху */
+.menu .menu-left-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Відстань між іконкою та логотипом */
+}
+
+.menu .menu-left-logo i {
+    font-size: 20px;
+    cursor: pointer; /* Змінює курсор при наведенні */
+}
+
+.menu .menu-left-logo img {
+    height: 20px; /* Висота логотипа */
+}
+
+/* Пошук */
+.search {
+    flex: 1; /* Займає доступний простір */
+    display: flex;
+    justify-content: center; /* Центрує пошуковий рядок */
+    max-width: 560px;
+    max-height: 43px;
+}
+
+/* Поле пошуку */
+.search input {
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #121111; /* Темний фон поля */
+    border: 1px solid #292828; /* Тонка рамка */
+    color: #ffffff;
+    border-radius: 20px 0 0 20px; /* Закруглення зліва */
+    outline: none;
+}
+
+/* Пошук зверху */
+.search button {
+    background-color: #292828;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 0 20px 20px 0; /* Закруглення справа */
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Іконки справа зверху дзвіночка та користувача */
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Відстань між іконками */
+}
+
+/* Категорії під пошуком */
+.categories {
+    position: sticky;
+    top: 56px; /* розташування під верхнім меню */
+    z-index: 99;
+    display: flex;
+    gap: 10px;
+    padding: 10px 16px;
+    margin-left: 240px; /* щоб не перекривалось лівим меню */
+    overflow-x: auto;
+    background-color: #0f0f0d;
+}
+
+/* Кнопки категорій */
+.categories button {
+    background-color: #292828;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+.categories button:hover {
+    background-color: #383737;
+}
+
+/* Активна категорія */
+.categories button.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Адаптивність — коли ліве меню приховане */
+@media (max-width: 900px) {
+    .categories {
+        margin-left: 0; /* без відступу, якщо ліве меню сховане */
+    }
+}
+
+/* Аватар справа зверху */
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+/* Ліве меню */
+.menu-left {
+    position: fixed; /* Закріплене положення */
+    top: 56px; /* Початок нижче верхнього меню */
+    left: 0;
+    width: 240px;
+    height: calc(100% - 56px); /* Займає всю висоту екрану */
+    padding-top: 10px;
+    background-color: #0f0f0f; /* Фон бокового меню */
+    overflow-y: auto; /* Прокрутка при великій висоті */
+}
+
+/* Логотип у боковому меню */
+.menu-left-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px;
+}
+
+.menu-left-logo i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-left-logo img {
+    height: 20px;
+}
+
+/* Списки розділів у лівому меню */
+.menu-left-list {
+    margin-bottom: 10px;
+}
+
+/* Окреме посилання у боковому меню */
+.menu-left-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #d5d2d2;
+    cursor: pointer;
+}
+
+.menu-left-link:hover {
+    background-color: #292828; /* Ефект підсвічування при наведенні */
+}
+
+/* Іконки в пунктах меню */
+.menu-left-link i {
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Лінії поділу між секціями */
+.line {
+    border-bottom: 1px solid #292828;
+    margin: 10px 0;
+}
+
+/* Розділ підписок */
+.subscriptions .menu-left-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px;
+    gap: 10px;
+}
+
+/* Іконки каналів у підписках */
+.subscriptions .sub-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Назви каналів */
+.subscriptions span {
+    flex: 1;
+    color: #ffffff;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* При наведенні на елемент */
+.subscriptions .menu-left-link:hover {
+    background-color: #292828;
+}
+
+/* Назви секцій лівого меню (Ви, Що Нового) */
+.menu-left-name {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 6px 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* Смуга прокрутки для лівого меню */
+.menu-left::-webkit-scrollbar {
+    width: 8px;
+}
+
+.menu-left::-webkit-scrollbar-thumb {
+    background-color: #2a2929;
+    border-radius: 4px;
+}
+
+/* Стиль іконок Font Awesome */
+.fas, .fa, .far, .fab {
+    color: #ffffff !important;
+}
+
+/* Колір позначки перевіреного каналу */
+.verified-channel {
+    color: #d2cfcf !important; 
+}
+
+/* Основна частина сторінки з відео */
+.web {
+    margin-left: 240px; /* Відступ, щоб не перекривати ліве меню */
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto; /* Прокрутка, якщо контент довгий */
+}
+
+/* Сітка для сторінки з відео */
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 відео в рядок */
+    gap: 20px; /* Відстань між відео */
+}
+
+.video {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Позиція для зображення відео */
+.image {
+    position: relative;
+}
+
+/* Зображення відео */
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 17px;
+}
+
+/* Тривалість відео */
+.time {
+    position: absolute;
+    bottom: 8px;
+    right: 7px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 6px;
+}
+
+/* Інформаційна частина відео */
+.info {
+    padding: 10px 0 8px;
+}
+
+/* Назва відео та іконка каналу */
+.name {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+/* Деталі вправо від іконки каналу */
+.name .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Назва відео та посилання на відео */
+.name a.name-link {
+    color: #ffffff;
+    text-decoration: none;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Обмеження у 2 рядки */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Трикрапка при обрізанні тексту */
+    word-break: break-word;
+    line-height: 1.3;
+}
+
+/* Іконка трьох точок під відео */
+.name i {
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+/* Іконка каналу */
+.channel-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #4d4b4b;
+    flex-shrink: 0;
+}
+
+/* Інформація про канал, перегляди і дату завантаження */
+.channel-info {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.channel-info a:hover {
+    color: #ffffff;
+}
+
+/* Назва каналу */
+.channel-info a {
+    color: #b0adad;
+    text-decoration: none;
+    margin-bottom: 1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Інформація про перегляди та дату завантаження */
+.channel-info span {
+    font-size: 12px;
+    color: #b0adad;
+}
+
+/* Адаптивність при ширині екрана до 900 пікселів */
+@media (max-width: 900px) {
+    .menu-left {
+        display: none; /* Приховує ліве меню */
+    }
+    .web {
+        margin-left: 0; /* Контент розтягується на всю ширину */
+    }
+    .list {
+        grid-template-columns: repeat(2, 1fr); /* 2 відео в ряд */
+    }
+}
+
+/* Адаптивність: при ширині екрана до 600px */
+@media (max-width: 600px) {
+    .list {
+        grid-template-columns: 1fr; /* Відео одне під одним */
+    }
+}
