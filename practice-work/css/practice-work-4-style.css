@@ -193,4 +193,3 @@ body {
 /* Numpad 0, крапка */
 .word[word-wordboard="Numpad0"]   { grid-row: 6; grid-column: 22 / 24; } /* Широка клавіша */
 .word[word-wordboard="Numpad."]   { grid-row: 6; grid-column: 24 / 25; }
-
