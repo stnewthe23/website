@@ -5,62 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особистий веб-сайт Коночінського Іллі</title>
 
-    <!-- Імпортування стилів сторінки -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Імпортування шрифту з іконками Font Awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    
+    <!-- Google Шрифт Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
 </head>
 <body>
 
-    <!-- Заголовок -->
-    <header>
-        <h1 id="home">Особистий веб-сайт Коночінського Іллі</h1>
-        <!-- Навігаційна панель -->
-        <nav>
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about-me">Про мене</a></li>
-                <li><a href="#practice-work">Практичні роботи</a></li>
-                <li><a href="#lab-work">Лабораторні роботи</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Заголовок сторінки -->
+        <header>
+            <h1 id="home">Особистий веб-сайт Коночінського Іллі</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about-me">Про мене</a></li>
+                    <li><a href="#practice-work">Практичні роботи</a></li>
+                    <li><a href="#lab-work">Лабораторні роботи</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Секція Про мене -->
-    <h2 style="text-align: center;">Про мене</h2>
-    <section id="about-me">
-        <img src="image/my-image.jpg" width="250">
-        <p>Моє ім'я - Ілля, і я є студентом групи КІД-42.<br>
-        Це мій персональний веб-сайт, де я ділюся власними проектами,</br> 
-        ідеями та корисними матеріалами.</br>
-        <br><i class="fa-brands fa-github fa-sm"></i> Мій GitHub: <a href="https://github.com/stnewthe23/">stnewthe23</a>
-        </p>
-    </section>
-    
+        <!-- Секція Про Мене -->
+        <section id="about-me">
+            <div class="hero-content">
+                <h2>Привіт</h2>
+                <p>
+                    Я студент групи КІД-42. Це мій персональний веб-сайт, де я ділюся власними проектами, ідеями та корисними матеріалами.
+                </p>
+                <a href="https://github.com/stnewthe23/" class="btn-primary" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub: stnewthe23
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="image/my-image.jpg">
+            </div>
+        </section>
+    </div>
+
     <!-- Секція Практичні роботи -->
-    <section id="practice-work">
-        <h2>Практичні роботи</h2>
-        <ul>
-            <li><a href="practice-work/practice-work-1.html">Практична робота 1</a> - Основи HTML</li>
-            <li><a href="practice-work/practice-work-2.html">Практична робота 2</a> - Основи CSS</li>
-            <li><a href="practice-work/practice-work-3.html">Практична робота 3</a> - Створення структури використовуючи Flexbox</li>
-            <li><a href="practice-work/practice-work-4.html">Практична робота 4</a> - Клавіатура</li>
+    <div class="recent-posts-bg">
+        <div class="container">
+            <section id="practice-work">
+                <div class="section-header">
+                    <h3>Практичні роботи</h3>
+                </div>
+                
+                <div class="posts-grid">
+                    <!-- Елемент 1 -->
+                    <article class="post-card">
+                        <a href="practice-work/practice-work-1.html">
+                            <h4>Практична робота 1</h4>
+                        </a>
+                        <p>Основи HTML.</p>
+                    </article>
 
-        </ul>
-    </section>
-    
-    <!-- Секція Лабораторні роботи -->
-    <section id="lab-work">
-        <h2>Лабораторні роботи</h2>
-        <ul>
-        </ul>
-    </section>
+                    <!-- Елемент 2 -->
+                    <article class="post-card">
+                        <a href="practice-work/practice-work-2.html">
+                            <h4>Практична робота 2</h4>
+                        </a>
+                        <p>Основи CSS.</p>
+                    </article>
 
-    <!-- Секція Футер -->
-    <footer>
-        <p>&copy; 2025 Коночінський Ілля</p>
-    </footer>
+                    <!-- Елемент 3 -->
+                    <article class="post-card">
+                        <a href="practice-work/practice-work-3.html">
+                            <h4>Практична робота 3</h4>
+                        </a>
+                        <p>Створення структури використовуючи Flexbox.</p>
+                    </article>
+
+                    <!-- Елемент 4 -->
+                    <article class="post-card">
+                        <a href="practice-work/practice-work-4.html">
+                            <h4>Практична робота 4</h4>
+                        </a>
+                        <p>Створення віртуальної клавіатури.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Лабораторні роботи -->
+    <div class="container">
+        <section id="lab-work">
+            <h3 class="featured-header">Лабораторні роботи</h3>
+            <!-- Елемент 1 -->
+            <article class="work-item">
+                <div class="work-content">
+                    <a href="https://stnewthe23.github.io/website/">
+                        <h4>Лабораторна робота 5</h4>
+                    </a>
+                    <p>Допрацювати головну сторінку сайту відповідно до шаблону</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Футер -->
+        <footer>
+            <div class="social-icons">
+                <a href="https://github.com/stnewthe23/"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Коночінський Ілля</p>
+        </footer>
+    </div>
+
 </body>
 </html>
