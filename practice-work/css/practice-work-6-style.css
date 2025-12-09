@@ -1,0 +1,76 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Без скролу на сторінці */
+    height: 100vh;
+}
+
+/* Фон */
+.page-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Радіальний градієнт */
+    background: radial-gradient(circle, #4b2d73, #2e1a47, #1a0b2e, #000000);
+    /* Збільшено розмір градієнта */
+    background-size: 200% 200%;
+    z-index: -1;
+    /* Анімація */
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Анімація для радіального градієнта */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Горизонтальний політ */
+.flight {
+    position: absolute;
+    top: 50%; /* Центр по вертикалі */
+    left: 100%; /* Початок справа */
+    
+    /* Рух вліво рівно за 15 секунд, безкінечно */
+    animation: flyAcrossScreen 15s linear infinite;
+}
+
+/* Коливання спрайту */
+.sprite {
+    /* Оптимальний розмір картинки */
+    width: 120px; 
+    height: auto;
+    
+    /* Анімація вверх та вниз, 2s - швидкість одного коливання */
+    animation: bobbing 2s ease-in-out infinite;
+}
+
+/* Кадри для руху справа наліво */
+@keyframes flyAcrossScreen {
+    from {
+        left: 100%; /* Початок справа  */
+    }
+    to {
+        left: -200px; /* Кінець зліва  */
+    }
+}
+
+/* Кадри для руху вверх та вниз */
+@keyframes bobbing {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-80px); /*  Вгору */
+    }
+    100% {
+        transform: translateY(0); /* Вниз */
+    }
+}
