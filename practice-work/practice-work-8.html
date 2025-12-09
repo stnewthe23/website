@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Особистий веб-сайт Коночінського Іллі</title>
 
-    <link  rel="stylesheet" href="css/style.css"> 
-    <!-- Font Awesome -->
+    <!-- Шрифт Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <!-- Google Шрифт Heebo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+    <link href="practice-work-8.html" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -21,17 +21,29 @@
         <!-- Заголовок сторінки -->
         <header>
             <h1 id="home">Особистий веб-сайт Коночінського Іллі</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Головна</a></li>
-                    <li><a href="#about-me">Про мене</a></li>
-                    <li><a href="#practice-work">Практичні роботи</a></li>
-                    <li><a href="#lab-work">Лабораторні роботи</a></li>
+            
+            <nav class="navbar">
+                <!-- Активація меню -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                
+                <!-- Посилання в меню -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Головна</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link">Про мене</a></li>
+                    <li class="nav-item"><a href="#practice-work" class="nav-link">Практичні роботи</a></li>
+                    <li class="nav-item"><a href="#lab-work" class="nav-link">Лабораторні роботи</a></li>
                 </ul>
+
+                <!-- Іконка для меню -->
+                <label for="nav-toggle" class="menu-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
             </nav>
         </header>
 
-        <!-- Секція Про Мене -->
+        <!-- Секція Про мене -->
         <section id="about-me">
             <div class="hero-content">
                 <h2>Привіт</h2>
@@ -43,7 +55,7 @@
                 </a>
             </div>
             <div class="hero-image">
-                <img src="image/my-image.jpg">
+                <img src="https://placehold.co/243x243" alt="My Profile Image"> 
             </div>
         </section>
     </div>
@@ -57,7 +69,6 @@
                 </div>
                 
                 <div class="posts-grid">
-                    <!-- Елемент 1 -->
                     <article class="post-card">
                         <a href="practice-work/practice-work-1.html">
                             <h4>Практична робота 1</h4>
@@ -65,7 +76,6 @@
                         <p>Основи HTML.</p>
                     </article>
 
-                    <!-- Елемент 2 -->
                     <article class="post-card">
                         <a href="practice-work/practice-work-2.html">
                             <h4>Практична робота 2</h4>
@@ -73,7 +83,6 @@
                         <p>Основи CSS.</p>
                     </article>
 
-                    <!-- Елемент 3 -->
                     <article class="post-card">
                         <a href="practice-work/practice-work-3.html">
                             <h4>Практична робота 3</h4>
@@ -81,43 +90,27 @@
                         <p>Створення структури використовуючи Flexbox.</p>
                     </article>
 
-                    <!-- Елемент 4 -->
                     <article class="post-card">
                         <a href="practice-work/practice-work-4.html">
                             <h4>Практична робота 4</h4>
                         </a>
                         <p>Створення віртуальної клавіатури.</p>
                     </article>
-                    <article class="post-card">
-                        <a href="practice-work/practice-work-8.html">
-                            <h4>Практична робота 8</h4>
-                        </a>
-                        <p>Створено мобільну версію шаблону</p>
-                    </article>
                 </div>
             </section>
         </div>
     </div>
 
-    <!-- Лабораторні роботи -->
+    <!-- Секція Лабораторні роботи -->
     <div class="container">
         <section id="lab-work">
             <h3 class="featured-header">Лабораторні роботи</h3>
-            <!-- Елемент 1 -->
             <article class="work-item">
                 <div class="work-content">
                     <a href="https://stnewthe23.github.io/website/">
                         <h4>Лабораторна робота 5</h4>
                     </a>
                     <p>Допрацювати головну сторінку сайту відповідно до шаблону</p>
-                </div>
-            </article>
-            <article class="work-item">
-                <div class="work-content">
-                    <a href="practice-work/practice-work-8.html">
-                        <h4>Лабораторна робота 8</h4>
-                    </a>
-                    <p>Мобільна версія шаблону сторінки</p>
                 </div>
             </article>
         </section>

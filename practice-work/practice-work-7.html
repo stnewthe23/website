@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>З Новим Роком 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Базові налаштування сторінки */
+        body {
+            margin: 0;
+            padding: 1rem;
+            background-color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Головна картка */
+        .card {
+            box-sizing: border-box;
+            background-color: #e6d3ab; /* колір паперу */
+            width: 100%;
+            max-width: 48rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            gap: 1.5rem;
+            text-align: center;
+            position: relative;
+            border: 1px solid #e7e5e4;
+            border-radius: 10%; 
+        }
+
+        .elements {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image-element {
+            margin-bottom: 0.5rem;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 10%;
+            overflow: hidden;
+        }
+
+        .tree-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Текстові стилі */
+        .yearnumber {
+            margin: 0;
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #2c2c2c;
+            line-height: 1;
+            font-weight: 400;
+        }
+
+        .text {
+            margin: 0;
+            font-family: 'Marck Script', cursive;
+            font-size: 2rem;
+            color: #1c1917;
+            font-weight: 400;
+        }
+
+        .text2 {
+            margin: 0;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            color: #44403c;
+            line-height: 1.4;
+            max-width: 32rem;
+            padding: 0 0.5rem;
+            letter-spacing: 0.02em; 
+        }
+
+        /* Адаптивність для великих екранів */
+        @media (min-width: 768px) {
+            .card {
+                padding: 4rem;
+                min-height: 32rem; 
+                gap: 2rem;
+            }
+            .image-element {
+                width: 12rem;
+                height: 12rem;
+            }
+            .yearnumber {
+                font-size: 7rem;
+            }
+            .text {
+                font-size: 2.5rem;
+            }
+            .text2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <div class="elements">
+            <h1 class="yearnumber">2026</h1>
+        </div>
+        <div class="image-element">
+            <img class="tree-image" src="practice-work-7-images/practice-work-7-image.jpg">
+        </div>
+        <div class="elements">
+            <h2 class="text">З Новим Роком</h2>
+            <p class="text2">Хай цей рік буде світлим, добрим та сповненим нових можливостей.</p>
+        </div>
+    </main>
+</body>
+</html>
